@@ -90,7 +90,8 @@ const value4 = [value1, value2, value3]
      for (let i = 0; i < array.length; i ++) {
       store += `${array[i]} ${store}`
      }
-   document.getElementById(form).innerHTML = store
+     console.log(store);
+   document.getElementById(element4).innerHTML = store
    } 
 
 
@@ -142,7 +143,7 @@ third(btn3.tagName)
 btn4.addEventListener('click', () => {
 
   // Invoke the function to set the fourth element  
-  fourth([3, 4, 5])
+  fourth([1, 2,])
 
   // Helpful log statement to test function
   console.log('Fourth button is functional!');
