@@ -88,7 +88,7 @@ const value4 = [value1, value2, value3]
     element4.style.color = "salmon";
     let store = ''
      for (let i = 0; i < array.length; i ++) {
-      store += `${array[i]} ${store}`
+      store = `${array[i]} ${store}`
      }
      console.log(store);
    element4.innerHTML = store
