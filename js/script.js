@@ -86,12 +86,12 @@ const value4 = [value1, value2, value3]
 
   function fourth (array) { 
     element4.style.color = "salmon";
-    let store = `''`
+    let store = ''
      for (let i = 0; i < array.length; i ++) {
       store += `${array[i]} ${store}`
      }
      console.log(store);
-   document.getElementById(element4).innerHTML = store
+   element4.innerHTML = store
    } 
 
 
@@ -143,7 +143,7 @@ third(btn3.tagName)
 btn4.addEventListener('click', () => {
 
   // Invoke the function to set the fourth element  
-  fourth([1, 2,])
+  fourth([1, 2, 3])
 
   // Helpful log statement to test function
   console.log('Fourth button is functional!');
