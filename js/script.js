@@ -48,7 +48,7 @@ const value4 = [value1, value2, value3]
 
   function first (number) { 
     element1.style.color = "green";
-    element1.innerHTML = 'number';
+    element1.innerHTML = number;
    } 
 
 
@@ -62,7 +62,7 @@ const value4 = [value1, value2, value3]
 
   function second (string) { 
     element2.style.color = "firebrick";
-    element2.innerHTML = 'string';
+    element2.innerHTML = string;
    } 
 
 
@@ -73,7 +73,7 @@ const value4 = [value1, value2, value3]
 
   function third (element) { 
     element3.style.color = "blue";
-    element3.innerHTML = 'element';
+    element3.innerHTML = element;
    } 
 
 
@@ -90,7 +90,7 @@ const value4 = [value1, value2, value3]
      for (let i = 0; i < array.length; i ++) {
       store += `${array[i]} ${store}`
      }
-   document.getElementById(element4).innerHTML = store
+   document.getElementById(form).innerHTML = store
    } 
 
 
@@ -105,14 +105,11 @@ const value4 = [value1, value2, value3]
  */
 
 /* btn1 listener */
-btn1.addEventListener('click', (value1) => {
-  function first (number) { 
-    element1.style.color = "green";
-    element1.innerHTML = 'number';
-   } 
-  
+btn1.addEventListener('click',(value1) => {
+
 
   // Invoke the function to set the first element
+  first(1)
 
   // Helpful log statement to test function
   console.log('First button is functional!');
@@ -123,6 +120,7 @@ btn1.addEventListener('click', (value1) => {
 btn2.addEventListener('click', () => {
 
   // Invoke the function to set the second element 
+  second('Treehouse Rocks!');
 
   // Helpful log statement to test function
   console.log('Second button is functional!');
@@ -133,6 +131,7 @@ btn2.addEventListener('click', () => {
 btn3.addEventListener('click', () => {
 
   // Invoke the function to set the third element 
+third(btn3.tagName)
 
   // Helpful log statement to test function
   console.log('Third button is functional!');
@@ -143,7 +142,10 @@ btn3.addEventListener('click', () => {
 btn4.addEventListener('click', () => {
 
   // Invoke the function to set the fourth element  
+  fourth([3, 4, 5])
 
   // Helpful log statement to test function
   console.log('Fourth button is functional!');
 });
+
+
